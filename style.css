@@ -46,7 +46,8 @@ height: 100vh!important;
 	margin-bottom: 3rem; 
 }
 .left-side .bottom-logo img{
-	width: 100%;
+	width: 60%;
+	max-width: 100%;
 }
 .main img{
 	width: 50%;
