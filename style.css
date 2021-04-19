@@ -1,0 +1,54 @@
+*{ 
+	font-family: 'Century Gothic',CenturyGothic,AppleGothic, sans-serif; 
+	/*background-color: var(--dark-color);*/
+	color: var(--white-color);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1rem;
+}
+.bg-blue{
+	background-color: var(--blue-color);
+}
+.content{	
+	  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+:root {
+  --blue-color: #0000ff;
+  --dark-color: #111111;
+  --white-color: #fff;
+  --light-color: #f8f9fa;
+}
+
+.full-hv{
+height: 100vh!important;
+}
+.right-side{
+	background-color: var(--white-color);
+	border:none;
+	border-top-left-radius: 90px;
+	border-bottom-left-radius: 90px; 
+
+}
+.left-side{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.left-side .bottom-logo{
+	margin-left: 3rem;
+	margin-bottom: 3rem; 
+}
+.left-side .bottom-logo img{
+	width: 100%;
+}
+.main img{
+	width: 50%;
+	padding-top:2.8rem; 
+}
