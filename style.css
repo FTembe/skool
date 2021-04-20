@@ -85,7 +85,8 @@ height: 100vh!important;
 
 .main img{
 	width: 100%;
-	padding-top:0; 
+	padding-top:0;
+	margin:0; 
 }
 .main{
 	display: flex;
