@@ -84,8 +84,8 @@ height: 100vh!important;
 }
 
 .main img{
-	width: 100%;
-	padding-top:0;
+	width: 80%;
+	padding-top:10px;
 	margin:0; 
 }
 .main{
@@ -99,6 +99,12 @@ height: 100vh!important;
 	border-bottom-left-radius: 0; 
 	border-top-right-radius: 70px;
 	border-top-left-radius: 70px; 
+	margin-top: -8rem;
+
+}
+.left-side .bottom-logo img{
+	width: 100%;
+	margin-left: -2rem;
 
 }
 }
