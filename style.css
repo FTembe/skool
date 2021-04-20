@@ -99,12 +99,14 @@ height: 100vh!important;
 	border-bottom-left-radius: 0; 
 	border-top-right-radius: 70px;
 	border-top-left-radius: 70px; 
-	margin-top: -8rem;
+
 
 }
 .left-side .bottom-logo img{
-	width: 100%;
-	margin-left: -2rem;
-
+	width: 40%;
+	display:block;
+position: absolute;
+left: 12px;
+margin-bottom: 2rem;
 }
 }
