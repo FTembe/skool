@@ -19,15 +19,64 @@
 				</div>
 			</div>
 		<div class="col-md-8 right-side">
+			
 				<div class="main">
 					<img src="./assets/images/main.png">
 				</div>
+				<div class="d-flex flex-row justify-content-center">
+				<div class="login">
+					<button class="btn btn-login btn-login-google btn-lg bg-dark "> &nbsp  Entrar com <span> Google</span> &nbsp&nbsp  </button>
+				</div>
 				
+				<div class="">
+					<button class="btn btn-login btn-login-fb btn-lg bg-blue">Entrar com <span>facebook </span></button>
+				</div>
+				</div>
+				
+				<div class="col-md-5   mt-3 float-right text-black">
+					<a href="#" class="text-dark"> Criar Conta Raiz</a>
+				</div>
 			</div>
 		</div>
 		
 	</div>
 <script src="./assets/js/scripts.js"></script>
+<style type="text/css">
+	a{
+		text-decoration: none;
+	
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	.login{
+		position: relative;
+		
+	}
+	.btn-login{
+		border:none;
+		padding: 1.1rem  3rem;
+		border-radius: 23rem;
+		/*font-size: 2rem;*/
+	}
+	.btn-login span{
+		color: #fff;
+		font-weight:900;
+	}
+	.btn-login-google {transition: all 50ms; 
+		position: relative;
+		left: 1.4rem;
+		z-index: 2;
+	}
+	.btn-login-fb {
+		position: relative;
+		right: 1.6rem;
+		z-index: 2;
+	}
+	.btn-login-google:hover{
+		z-index: 4;
+	}
+</style>
 </body>
 
 
