@@ -60,11 +60,14 @@ height: 100vh!important;
 }
 
 .main img{
-	width: 55%;
+	width: 74%;
 	margin-left: 0;
 	padding-left: 0; 
-	padding-top:2.8rem; 
-	overflow: hidden;
+	/*padding-top:2.8rem; */
+	padding-bottom: 0rem;
+	margin: 0rem;
+	overflow: hidden;	
+	
 }
 
 @media only screen and (max-width: 766px) {
