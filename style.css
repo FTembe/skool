@@ -98,6 +98,7 @@ height: 100vh!important;
 }
 
 .right-side{
+	margin-top:3rem; 
 		border-top-left-radius: 0;
 	border-bottom-left-radius: 0; 
 	border-top-right-radius: 70px;
