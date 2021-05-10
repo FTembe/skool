@@ -44,41 +44,42 @@
 				<a href="index.html"><img loading="lazy" src="./assets/img/logowhite.png" alt="skool"></a>
 			</div>
 			<div class="col-md-2 text-right" >
-			<a href="index.html" style=" color:  #FFF; text-decoration: none; text-align:right;">Voltar</a>
+			<a href="method.html" style=" color:  #FFF; text-decoration: none; text-align:right;">Voltar</a>
 			</div>
 		</div>
 	</div>
 	</section>
-	<section class="large-padding " style="background-color: #fff; border: none;border-top-right-radius: 80px; border-top-left-radius: 80px;min-height:70.5vh; max-height: 100vh;">
+	<section class="large-padding " style="overflow: hidden;background-color: #fff; border: none;border-top-right-radius: 80px; border-top-left-radius: 80px;min-height: 70.5vh;max-height: 100vh;overflow-y: hidden;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<header class="crumina-module crumina-heading">
-						<div class="title-text-wrap">
-							<h2 class="heading-title">Metodo de Pagamento</h2>
-						</div>
-					</header>
-					<div class="send-message-form crumina-submit mt-5">
+                    <form class="send-message-form crumina-submit mt-5" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="modules/forms/submit.php">
 						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
-								<a href="checkout.html"
-									class="crumina-button button--dark button--l w-100 h-100 p-5">M-pesa</a>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="form-item">
+									<input class="input--white" name="site" type="text" placeholder="Nome do Titular" required style="border:solid 2px #111" >
+								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
-								<a href="checkout.html"
-									class="crumina-button button--primary button--l w-100 h-100 p-5">Cartã de
-									Credito/Debito</a>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="form-item">
+									<input class="input--white" name="site" type="text" placeholder="Numero so Cartão" required style="border:solid 2px #111">
+								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
-								<a href="checkout.html"
-									class="crumina-button button--dark button--l button--bordered w-100 h-100 p-5">Transferencia</a>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<div class="form-item">
+									<input class="input--white" name="name" type="text" placeholder="MM/AA" required style="border:solid 2px #111">
+								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
-								<a href="checkout.html"
-									class="crumina-button button--dark button--l button--bordered w-100 h-100 p-5">Paypal</a>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<div class="form-item">
+									<input class="input--white" name="name" type="text" placeholder="CCV" required style="border:solid 2px #111">
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                                <a href="checkout.html"  class=" crumina-button button--primary button--l w-30 ">Pagar</a>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 

@@ -1928,7 +1928,7 @@ button.swiper-pagination-bullet {
   --body-font-weight: 400;
   --base-line-height: 1.6;
   --body-letter-spacing: initial;
-  --primary-accent-color: #27c7cd;
+  --primary-accent-color: blue;
   --secondary-accent-color: #6c6ff2;
   --body-font-color: #495057;
   --white-color: #ffffff;
@@ -1937,7 +1937,7 @@ button.swiper-pagination-bullet {
   --red-themes: #fc3e59;
   --green-themes: #95d133;
   --grey-themes: #f1f2ec;
-  --dark-themes: #1b2c38;
+  --dark-themes: #111;
   --yellow-themes: #ffcb05;
   --brown-themes: #d89961;
   --pink-themes: #f28089;
