@@ -1,0 +1,648 @@
+/*------ Main RTL Rules -------*/
+body {
+  text-align: right;
+  unicode-bidi: embed;
+  direction: rtl; }
+
+div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  direction: inherit; }
+
+table > thead > tr > th, .table > tbody > tr > th,
+table > tfoot > tr > th, .table > thead > tr > td,
+table > tbody > tr > td, .table > tfoot > tr > td {
+  text-align: right; }
+
+ol ol, ol ul, ul ol, ul ul {
+  padding-right: 0; }
+
+ul strong {
+  display: inline-block; }
+
+ol li,
+ol ol li,
+ul ol li {
+  padding-left: 0;
+  padding-right: 20px; }
+
+ol li::before,
+ol ul ol li::before,
+ul ol li::before {
+  left: auto;
+  right: 0; }
+
+ol {
+  padding-left: 0;
+  padding-right: 20px; }
+
+.list ul {
+  padding: 0 60px 0 0; }
+
+ol:not([class]) ul,
+ul:not([class]) ul {
+  padding: 0 40px 0 0; }
+
+ul:not([class]) {
+  padding-left: 0;
+  padding-right: 40px; }
+
+ol ul li {
+  padding-right: 0; }
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.align-left {
+  text-align: right; }
+
+.align-right {
+  text-align: left; }
+
+.alignright {
+  float: left;
+  margin: 5px 40px 20px 0; }
+
+.alignleft {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignright {
+  float: left;
+  margin: 5px 40px 20px 0; }
+
+a img.alignleft {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.wp-caption.alignleft {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption.alignright {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignnone {
+  margin: 5px 0 35px 20px; }
+
+/*================= Theme Styles ============*/
+.form--inline button {
+  right: auto;
+  left: 0; }
+
+.swiper-container {
+  direction: ltr; }
+
+.navigation-additional-menu > * {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.navigation-additional-menu > :last-child {
+  margin-left: 0; }
+
+.navigation-dropdown-link .arrow-right {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: 10px; }
+
+.navigation-dropdown-link::before {
+  left: auto;
+  right: 0; }
+
+.navigation-list > li > a:not(.crumina-button) .arrow-right {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: 10px; }
+
+.navigation-dropdown-link .crumina-icon {
+  margin-left: 20px;
+  margin-right: 0; }
+
+.submenu-indicator {
+  right: auto;
+  left: 0; }
+
+.search-popup-close {
+  right: auto;
+  left: 0; }
+
+.user-menu-content {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.user-menu {
+  left: 15%;
+  right: auto; }
+
+.socials {
+  padding-right: 0; }
+
+.navigation-body-close-button {
+  margin-left: 0;
+  margin-right: auto; }
+
+.main-slider-slides .slides-item .slides-item-icon {
+  right: auto;
+  left: 40px; }
+
+.info-box-thumb {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.list--standard li .crumina-icon {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.universal-btn-wrapper > * {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.crumina-counter-item .counter-numbers .units {
+  margin-left: 0;
+  margin-right: -15px; }
+
+.testimonial-item-modern .author-quote-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.read-more {
+  padding: 0 30px 0 0;
+  border-left: none;
+  border-right: 1px solid #949fac;
+  margin: 0 30px 0 0; }
+
+.post-author .author-avatar {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.author-text {
+  text-align: right; }
+
+.input-btn--inline .crumina-button {
+  margin-left: 0;
+  margin-right: 30px; }
+
+.widget_links ul a {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.widget_links ul li:hover a {
+  -webkit-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  transform: translateX(-5px); }
+
+.widget_links ul .crumina-icon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.widget_links ul {
+  padding-right: 0; }
+
+.socials .social-item {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.socials .social-item:last-child {
+  margin-left: 0; }
+
+.contacts-item .crumina-icon {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.crumina-checkbox {
+  padding-left: 0;
+  padding-right: 30px; }
+
+.control__indicator {
+  left: auto;
+  right: 0; }
+
+.list--standard {
+  padding-left: 0;
+  padding-right: 20px; }
+
+.read-more .crumina-icon {
+  margin-left: 0;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.post-additional-info-wrap > * .crumina-icon {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.login-block .crumina-icon {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.top-bar-item .socials .social-item {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.socials .social-item:last-child {
+  margin-left: 0; }
+
+.top-bar-item .socials {
+  margin-left: 0;
+  margin-right: 10px; }
+
+.top-bar-content > :last-child {
+  margin-left: 0;
+  margin-right: auto; }
+
+.top-bar-item:first-child {
+  border-right: 0; }
+
+.language-switcher-dropdown .select2-results__option span {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.language-switcher-dropdown .select2-results__option span .crumina-icon {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.back-to-top {
+  right: auto;
+  left: 50px; }
+
+.crumina-teammember-item .socials .social-item {
+  margin-right: 0;
+  margin-left: 15px; }
+
+.top-bar-link {
+  margin-left: 0;
+  margin-right: auto; }
+
+.service-item-link {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.link-with-icon .crumina-icon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.link-with-icon:hover .crumina-icon {
+  -webkit-transform: translateX(-3px) rotate(180deg);
+  -ms-transform: translateX(-3px) rotate(180deg);
+  transform: translateX(-3px) rotate(180deg); }
+
+.link-with-icon .crumina-icon {
+  margin-left: 0;
+  margin-right: 10px; }
+
+.inquiry-btn-wrap span {
+  margin-left: 0;
+  margin-right: 30px; }
+
+.crumina-accordion .btn-link .icons {
+  padding-right: 0;
+  padding-left: 20px; }
+
+.crumina-accordion .card-body::before {
+  left: auto;
+  right: 37px; }
+
+.testimonial-item-arrow .post-author .author-avatar {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.pie-chart {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.testimonial-item-author-bottom .author-avatar {
+  margin-left: 30px; }
+
+.swiper-container .latest-news-item .post-author {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.swiper-container .post-additional-info-wrap {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.swiper-container .post-additional-info-wrap > * {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.swiper-container .post-author {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.breadcrumbs {
+  padding-right: 0; }
+
+.page-navigation {
+  direction: ltr; }
+
+.likes {
+  margin-left: 0;
+  margin-right: 30px; }
+
+.likes .crumina-icon {
+  margin-right: 0;
+  margin-left: 12px; }
+
+.seo-results-item .crumina-icon {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.results-points {
+  padding-left: 0;
+  padding-right: 40px; }
+
+.results-points .results-point-sircle {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.testimonial-item-quote-left .quote {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.testimonial-item-quote-left .author-avatar {
+  margin-left: 30px; }
+
+.follow-item > .crumina-icon {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.post-pagination {
+  direction: ltr; }
+
+.case-time-create .crumina-icon {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.w-contacts .contact-item .crumina-icon {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.seo-results--inline .seo-results-item .crumina-icon {
+  margin-left: 0; }
+
+.w-search button {
+  right: auto;
+  left: 0; }
+
+.input-title abbr[title] {
+  margin-left: 0;
+  margin-right: 3px; }
+
+.post-category-count {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.post-category-item .crumina-icon {
+  margin-left: 0;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.post-category-item:hover .crumina-icon {
+  -webkit-transform: rotate(180deg) translateX(5px);
+  -ms-transform: rotate(180deg) translateX(5px);
+  transform: rotate(180deg) translateX(5px); }
+
+.w-follow-add {
+  right: auto;
+  left: 0; }
+
+.tags-list {
+  padding-right: 0; }
+
+.tags-list li {
+  margin-right: 0;
+  margin-left: 10px; }
+  .tags-list li:last-child {
+    margin-left: 0; }
+
+.post-additional-info-wrap > * {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.post.format-quote .post-author .author-avatar {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.follow-item {
+  padding: 10px 30px 10px 60px; }
+
+.post-additional-info > * {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.post-additional-info > :last-child {
+  margin-left: 0; }
+
+.post-standard-details--wide .post-details-content {
+  text-align: right; }
+
+.share-post > span {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.share-post .socials .social-item {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.author-post .author-avatar {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.comment-reply {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.comments__list .comments__avatar {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.sorting-products-wrap .sorting-products-text {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.product-details-content .price {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.rait-stars {
+  padding-right: 0; }
+
+.price-review-wrap .rait-stars {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.product-details-content .quantity-btn-wrap .quantity {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.product-details-content .product-details-add-info {
+  padding-right: 0; }
+
+.quantity {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.crumina-module.crumina-tabs .tabs-list {
+  padding-right: 0; }
+
+.product-review-item .author-avatar {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.product-review-item .review-author-name {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.rait-stars--reviews li {
+  margin-right: 0;
+  margin-left: 5px; }
+  .rait-stars--reviews li:last-child {
+    margin-left: 0; }
+
+.rait-stars li {
+  margin-right: 0;
+  margin-left: 5px; }
+  .rait-stars li:last-child {
+    margin-left: 0; }
+
+.cart-price-total .subtotal {
+  text-align: left; }
+
+.cart-price-total .order-total .subtotal {
+  text-align: left; }
+
+table > tbody > tr > td:first-child::before {
+  left: auto;
+  right: 0; }
+
+.cart-main .actions td {
+  text-align: left; }
+
+.top-bar-close {
+  right: auto;
+  left: 10px; }
+
+.crumina-radio label {
+  padding-left: 0;
+  padding-right: 40px; }
+
+.crumina-radio label span {
+  left: auto;
+  right: 0; }
+
+.payment_methods .pay-pal {
+  margin-left: 0;
+  margin-right: 20px; }
+
+.payment_methods {
+  padding-right: 0; }
+
+.input-title {
+  padding-left: 0;
+  padding-right: 30px; }
+
+.first-letter--before-text span:first-of-type {
+  margin-right: 0;
+  margin-left: 30px;
+  float: right; }
+
+.first-letter--under-text span:first-of-type {
+  left: auto;
+  right: 0; }
+
+.first-letter--under-text {
+  padding: 30px 20px 0 0; }
+
+.crumina-button {
+  direction: ltr; }
+
+.cart-popup-item .cart-popup-item-thumb {
+  margin-right: 0;
+  margin-left: 30px; }
+
+.cart-popup-item .price {
+  text-align: right; }
+
+.title-cart {
+  text-align: right; }
+
+.select2-results__option::after {
+  right: auto;
+  left: 28px; }
+
+/*================= Responsive Mode ============*/
+@media (max-width: 992px) {
+  .user-menu {
+    left: 30%;
+    right: auto; }
+  .top-bar-content > :last-child {
+    margin-left: auto; } }
+
+@media (max-width: 768px) {
+  .right-menu .user-menu-close {
+    right: auto;
+    left: 15px; }
+  .info-box-thumb {
+    margin-left: 0; }
+  .input-btn--inline .crumina-button {
+    margin-right: 0; }
+  .widget_links ul a {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .results-points {
+    padding-right: 0; }
+  .post-details-author-info .author-avatar {
+    margin-left: 0; } }
+
+@media (max-width: 570px) {
+  .read-more {
+    padding-right: 0;
+    margin-right: 0;
+    border: none; } }
+
+@media (min-width: 992px) {
+  .submenu-indicator {
+    margin-left: 0;
+    margin-right: 6px; }
+  .navigation-list > li > a:not(.crumina-button) {
+    padding: 8px 30px 8px 9px; }
+  .navigation-megamenu-container .menu-item-info {
+    padding: 9px 30px 9px 9px; } }
+
+/*# sourceMappingURL=maps/rtl.min.css.map */
