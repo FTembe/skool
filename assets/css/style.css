@@ -116,7 +116,7 @@ position: absolute;
   cursor: pointer;
 } 
 /* Sotries */
-.container{
+.container-wrapper{
   width: 90%;
 
   margin: 0 auto;
@@ -129,6 +129,17 @@ position: absolute;
   align-items: center;
   overflow-y: auto;
 }
+
+.container-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .story-container ul{
   list-style: none;
   display: flex;
@@ -174,10 +185,10 @@ justify-content: center;
 .story-container ul li span{
   color: rgba(0,0,0,0.85);
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 700;
   text-overflow: ellipsis;
-max-width: 85px;
-margin-top: 5px;
+  max-width: 85px;
+  margin-top: 5px;
 }
 /*pub-*/
 .pub-wrapper{
@@ -185,7 +196,7 @@ margin-top: 5px;
   margin: 0 auto;
   position: relative;
   background-color: #f8f9fa;
-  border-radius: 50px;
+  border-radius: 20px;
   top: 30px;
 
 
@@ -200,15 +211,16 @@ margin-top: 5px;
 }
 .pub-button{
   
-   width:  120px;
+   width:  200px;
    height: 40px;
   background:transparent;
   cursor: pointer;
    border-radius: 40px;
   font-size: 16px;
-    font-weight: 500;text-align: center;
+    font-weight: 700;text-align: center;
     border: solid 2px #111;
     color: #111;
+    text-transform: uppercase;
 
   }
   
@@ -250,38 +262,40 @@ margin-top: 5px;
 
  @media (max-width:766px) {
   .pub-wrapper{
+    background-color: red;
       border-radius: 5px;
+
   }
     .nav-search{
         display: none;
     }
     .pub-desc h1{
-         font-size: 1.2rem;
-   margin-bottom: 10px;
+         font-size: 3rem;
+   margin-bottom: 20px;
+   color: #fff;
     }
     .pub-content{
-      padding: 20px;
+      padding: 40px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     }
    .pub-img img{
-    float: left;
     position: relative;
     z-index: 1;
     width: 100%;
-    float: right;
     opacity: 0.8;
   }
   .pub-desc{
     position: absolute;
     z-index: 99
   }
+
   .pub-button{
-  
-   width:  80px;
-   height: 40px;
 
-   border-radius: 40px;
-  font-size: 14px;
-
+    width: 180px;
+  /*padding: 10px 30px;*/
 
   }
 }
