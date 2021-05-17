@@ -75,7 +75,7 @@ header div.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 5%;
+  padding: 8px 5%;
   padding-bottom: 0;
 }
 
