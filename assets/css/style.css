@@ -356,7 +356,7 @@ justify-content: center;
  @media (max-width:766px) {
   .pub-wrapper{
     /*background-color: red;*/
-      border-radius: 20px;
+      border-radius: 30px;
 
   }
     .nav-search{
