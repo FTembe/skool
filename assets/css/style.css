@@ -58,7 +58,7 @@ img{
 }
 /* Nabar */
 header {
-  box-shadow: 0px 0px 8px #ddd;
+/*  box-shadow: 0px 0px 8px #ddd;*/
   width: 100%;
 }
 header div.navbar {
@@ -209,6 +209,7 @@ position: absolute;
   justify-content: center;
   align-items: center;
   overflow-y: auto;
+
 }
 
 .container-wrapper::-webkit-scrollbar {
@@ -279,7 +280,7 @@ justify-content: center;
   background-color: #f8f9fa;
   border-radius: 20px;
   top: 30px;
-
+  box-shadow: 0px 0px 8px #ddd;
 
 
 }
@@ -357,7 +358,7 @@ justify-content: center;
    /*color: #fff;*/
     }
     .pub-content{
-      padding: 80px 10px;
+      padding: 70px 10px;
       display: flex;
       justify-content: center;
       align-items: center;
