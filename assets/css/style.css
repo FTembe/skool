@@ -118,10 +118,8 @@ position: absolute;
 /* Sotries */
 .container-wrapper{
   width: 90%;
-
   margin: 0 auto;
   position: relative;
-  /*background-color: #f8f9fa;*/
   border-radius: 5px;
   top: 10px;
   display: flex;
@@ -162,8 +160,8 @@ justify-content: center;
 }
 
 .story-container ul li .story{
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   padding: 1px;
   position: relative;
@@ -184,7 +182,7 @@ justify-content: center;
 }
 .story-container ul li span{
   color: rgba(0,0,0,0.85);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   text-overflow: ellipsis;
   max-width: 85px;
@@ -262,7 +260,7 @@ justify-content: center;
 
  @media (max-width:766px) {
   .pub-wrapper{
-    background-color: red;
+    /*background-color: red;*/
       border-radius: 5px;
 
   }
@@ -272,7 +270,7 @@ justify-content: center;
     .pub-desc h1{
          font-size: 3rem;
    margin-bottom: 20px;
-   color: #fff;
+   /*color: #fff;*/
     }
     .pub-content{
       padding: 40px 10px;
