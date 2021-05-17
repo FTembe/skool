@@ -249,6 +249,9 @@ margin-top: 5px;
   }
 
  @media (max-width:766px) {
+  .pub-wrapper{
+      border-radius: 5px;
+  }
     .nav-search{
         display: none;
     }
