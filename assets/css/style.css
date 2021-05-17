@@ -356,7 +356,7 @@ justify-content: center;
  @media (max-width:766px) {
   .pub-wrapper{
     /*background-color: red;*/
-      border-radius: 15px;
+      border-radius: 20px;
 
   }
     .nav-search{
@@ -405,3 +405,13 @@ justify-content: center;
   }
 }
 
+ @media (max-width:375px) {
+
+  .story-container ul li:first-child{
+  padding-left: 80px;
+}
+/*.story-container ul li:last-child{
+  padding-right: 20px;
+}*/
+
+ }
