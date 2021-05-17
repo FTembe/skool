@@ -93,10 +93,93 @@ margin: 10px 0;
     border-top: solid 2px;
       width: 23px;
 }
+
+
+
+.menu{
+    display: none;
+    position: absolute;
+    background-color: var(--bg-blue);
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    padding: 3rem 4rem;
+    transition:all 1s ;
+}
+.menu-header{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+.menu.active{
+   display: block;
+}
+ .menu-logo img{
+  cursor: pointer;
+}
+
+.menu-header .menu-close{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 1s;
+}
+.menu-header .menu-close:hover{
+  opacity: 0.9;
+}
+
+.menu-container{
+  position: absolute;
+  top:30%;
+}
+.menu-container ul {
+  list-style: none;
+}
+
+.menu-container ul li{
+
+  padding: 10px 0;
+  margin: 2px 0;
+}
+.menu-container ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: margin-left 1s ease;
+}
+.menu-container ul li a:hover{
+  margin-left: 20px;
+}
+
+.menu-footer{
+  position: absolute;
+  bottom:1%;
+  right: 50%;
+  /*transition: s*/
+  transform:translate(50%,-50%);
+
+}
+.menu-footer p{
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+    font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu-footer p:hover{
+  opacity: 0.8;
+}
+
 .nav-search {
     position: relative;
   box-sizing: border-box;
 }
+
 .input-search {
   outline: none;
   width: 500px;
@@ -269,11 +352,12 @@ justify-content: center;
     }
     .pub-desc h1{
          font-size: 3rem;
-   margin-bottom: 20px;
+   margin-bottom: 3.2rem;
+
    /*color: #fff;*/
     }
     .pub-content{
-      padding: 40px 10px;
+      padding: 80px 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -295,6 +379,17 @@ justify-content: center;
     width: 180px;
   /*padding: 10px 30px;*/
 
+  }
+.menu{
+  padding-top: 30px ;
+
+}
+.menu-header{
+    /*align-items: center;*/
+}
+
+  .menu-logo img{
+    width: 80%;
   }
 }
 

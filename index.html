@@ -38,22 +38,43 @@
           <ul class="nav_links">
             <li class="nav_items"><a href="#"> <i class="fa fa-shopping-cart"></i> </a></li>
             <li class="nav_items"><a href="#"> <i class="fa fa-envelope"></i> </a></li>
-            <li class="nav_items">
+            <li class="nav_items menu-icon">
               <a href="#">
                 <div class="menu_line"></div>
                 <div class="menu_line_2"></div>
-              </a><!-- 
+              </a>
 
-              <div style="width: 80px;
-              height: 80px;
-              background: red; position: absolute; top:60px">
-                
-              </div> -->
+
             </li>
           </ul>
         </nav>
       </div>
      </div>
+    
+    <div class="menu ">
+      <div class="menu-header">
+        <div class="menu-logo">
+         <a href=""><img src="./assets/img/logowhite.png" alt="skool logo"  class="img-logo" /></a> 
+        </div>
+        <div class="menu-close">
+          Fechar
+        </div>
+      </div>
+      <div class="menu-container">
+        <ul>
+          <li><a href="#">sala de aulas</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">#hub</a></li>
+          <li><a href="#">#skoll share</a></li>
+          <li><a href="#">Skool</a></li>
+        </ul>
+        
+      </div>
+      <div class="menu-footer">
+        <p>Skool</p>
+      </div>
+    </div>
+
     </header>
     <section class="container-wrapper">
       <div class="story-container">
@@ -145,11 +166,15 @@
       </div>
     </div>
     </section>
-   <!--  <section class="footer">
-       <div class="footer-content">
-          <p>Skool, 2021</p>
-       </div>
-    </section> -->
-
+   
+<script type="text/javascript">
+  let menu =  document.querySelector('.menu');
+  document.querySelector('.menu-icon').addEventListener('click',()=>{
+    menu.classList.add('active');
+  })
+    document.querySelector('.menu-close').addEventListener('click',()=>{
+menu.classList.remove('active');
+    })
+</script>
   </body>
 </html>
