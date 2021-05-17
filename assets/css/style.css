@@ -405,13 +405,17 @@ justify-content: center;
   }
 }
 
- @media (max-width:375px) {
+ @media (max-width:360px) {
 
   .story-container ul li:first-child{
-  padding-left: 80px;
+  padding-left: 114px;
 }
-/*.story-container ul li:last-child{
-  padding-right: 20px;
-}*/
+
+ }
+  @media (max-width:411px) {
+
+  .story-container ul li:first-child{
+  padding-left: 30px;
+}
 
  }
