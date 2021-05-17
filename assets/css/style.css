@@ -381,7 +381,7 @@ justify-content: center;
 
   }
 .menu{
-  padding-top: 30px ;
+  padding: 30px 1rem;
 
 }
 .menu-header{
