@@ -52,6 +52,15 @@ button {
   color: var(--color-black);
   text-transform: none;
 }
+
+li:hover,
+a:hover,
+i:hover,
+button:hover {
+  /* opacity: 0.9; */
+  border: none;
+  outline: none;
+}
 img{
   pointer-events: none;
   cursor: pointer;
@@ -66,7 +75,8 @@ header div.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 5%;
+  padding: 2px 5%;
+  padding-bottom: 0;
 }
 
  .logo img {
@@ -185,7 +195,7 @@ margin: 10px 0;
   width: 500px;
   background-color: #f8f9fa;
   box-shadow: none;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: none;
   border-radius: 115px;
 }
@@ -204,7 +214,7 @@ position: absolute;
   margin: 0 auto;
   position: relative;
   border-radius: 5px;
-  top: 10px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,7 +289,7 @@ justify-content: center;
   position: relative;
   background-color: #f8f9fa;
   border-radius: 20px;
-  top: 30px;
+  top: 0px;
   box-shadow: 0px 0px 8px #ddd;
 
 
