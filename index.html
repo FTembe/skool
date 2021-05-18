@@ -36,7 +36,7 @@
         <div>
         <nav>
           <ul class="nav_links">
-            <li class="nav_items"><a href="#"> <i class="fa fa-search"></i> </a></li>
+            <li class="nav_items"><a href="#" id="search"> <i class="fa fa-search"></i> </a></li>
             <li class="nav_items menu-icon">
               <a href="#">
                 <div class="menu_line"></div>
@@ -177,6 +177,9 @@
       </div>
 <script type="text/javascript">
   let menu =  document.querySelector('.menu');
+   document.querySelector('#search').addEventListener('click',()=>{
+alert('relaxa');
+    })
   document.querySelector('.menu-icon').addEventListener('click',()=>{
     menu.classList.add('active');
   })
