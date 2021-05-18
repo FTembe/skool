@@ -36,14 +36,12 @@
         <div>
         <nav>
           <ul class="nav_links">
-            <li class="nav_items"><a href="#"> <i class="fa fa-shopping-cart"></i> </a></li>
-            <li class="nav_items"><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+            <li class="nav_items"><a href="#"> <i class="fa fa-search"></i> </a></li>
             <li class="nav_items menu-icon">
               <a href="#">
                 <div class="menu_line"></div>
                 <div class="menu_line_2"></div>
               </a>
-
 
             </li>
           </ul>
@@ -51,13 +49,18 @@
       </div>
      </div>
     
-    <div class="menu ">
+    <div class="menu active ">
       <div class="menu-header">
         <div class="menu-logo">
          <a href=""><img src="./assets/img/logowhite.png" alt="skool logo"  class="img-logo" /></a> 
         </div>
-        <div class="menu-close">
-          Fechar
+          <div class="menu-options">
+            <ul class="nav_links">
+            <li class="nav_items"><a href="#"> <i class="fa fa-shopping-cart"></i> </a></li>
+            <li class="nav_items"><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+            <li class="nav_items menu-close"><a href="#">X</a></li>
+          </ul>
+       
         </div>
       </div>
       <div class="menu-container">
@@ -70,8 +73,11 @@
         </ul>
         
       </div>
+        <div class="user-picture">
+       
+      </div>
       <div class="menu-footer">
-        <p>Skool</p>
+        <p>skool</p>
       </div>
     </div>
 
@@ -166,7 +172,9 @@
       </div>
     </div>
     </section>
-   
+   <div class="menu-footer">
+        <p style="color: #000">@skool</p>
+      </div>
 <script type="text/javascript">
   let menu =  document.querySelector('.menu');
   document.querySelector('.menu-icon').addEventListener('click',()=>{
