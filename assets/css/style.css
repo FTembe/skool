@@ -154,6 +154,7 @@ border:none;
  height: 10px;
  background: var(--bg-white);
  border-radius: 14px;
+  animation: color-zoom 1s linear 0s infinite alternate;
  
 }
 
@@ -169,11 +170,33 @@ border:none;
   justify-content: space-between;
   align-items: center;
   border:solid 2px #fff;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 0 8px;
+
 }
+@keyframes zoom{
+  from{
+    transform: scale(1); 
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+@keyframes color-zoom{
+  from{
+    transform: scale(1); 
+    opacity: 0.5;
+  }
+  to{
+    transform: scale(1.2);
+   opacity: 1;
+  }
+}
+
 .menu-header .menu-close:hover{
-  opacity: 0.9;
+  animation: zoom 1s linear 0s infinite alternate;
+
+
 }
 
 .menu-container{
