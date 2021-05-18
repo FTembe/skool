@@ -52,6 +52,7 @@ button {
   font-weight: 400;
   color: var(--color-black);
   text-transform: none;
+  outline: none;
 }
 
 li:hover,
@@ -59,7 +60,7 @@ a:hover,
 i:hover,
 button:hover {
   /* opacity: 0.9; */
-  border: none;
+
   outline: none;
 }
 img{
@@ -167,7 +168,8 @@ border:none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border:solid 3px #fff;
+  border:solid 2px #fff;
+  border-radius: 10px;
   padding: 0 8px;
 }
 .menu-header .menu-close:hover{
@@ -207,6 +209,7 @@ border:none;
 
 }
 .menu-footer p{
+  margin-top:-1rem;
   text-transform: lowercase;
   text-align: center;
   color: #fff;
@@ -421,10 +424,10 @@ justify-content: center;
   }
 
   .pub-button{
-    
+
     float: right;
-    width: 160px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
   /*padding: 10px 30px;*/
 
   }
