@@ -17,6 +17,7 @@ p {
 :root {
   --bg-blue: #0000ff;
   --bg-black: #111111;
+  --bg-white: #ffffff;
   --primary-accent-color: #27c7cd;
   --link-color: #1b2c38;
   --color-black: #111111;
@@ -114,7 +115,7 @@ margin: 10px 0;
     height: 100vh;
     width: 100%;
     top:0;
-    padding: 3rem 4rem;
+    padding: 10px 4rem;
     transition:all 1s ;
 }
 .menu-header{
@@ -127,7 +128,7 @@ margin: 10px 0;
 }
  .menu-logo img{
   cursor: pointer;
-  width: 80%;
+  width: 120px;
 }
 .user-picture{
   width: 64px;
@@ -137,9 +138,23 @@ margin: 10px 0;
 
   position: absolute;
 
-bottom: 6%;
+bottom: 9%;
 }
-
+.envelope{
+  position: relative;
+}
+.envelope a span{
+  margin-left: 0px;
+  margin-top: -3px; 
+  position: absolute;
+  top: 0;
+border:none;
+ width: 10px;
+ height: 10px;
+ background: var(--bg-white);
+ border-radius: 14px;
+ 
+}
 
 .menu-header .menu-options ul.nav_links a, .menu-header .menu-options ul.nav_links a i{
   color: #fff;
@@ -412,7 +427,7 @@ justify-content: center;
 
   }
 .menu{
-  padding: 30px 1rem;
+  padding: 10px 1rem;
 
 }
 .menu-header{
