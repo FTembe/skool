@@ -491,18 +491,6 @@ justify-content: center;
     width: 80%;
   }
 
-
-  /*single*/
-   .sn-details{
-     margin-top: 0.2rem;
-   }
-  .right-details{
-    margin-top: 0.2rem;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 0;
-
-  }
 }
 
  @media (max-width:360px) {

@@ -124,7 +124,8 @@
   .button-get-course button{
     border:none;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
+    text-transform: uppercase;
     color: #fff;
     background:#0000ff;
      border-radius: 160px;
@@ -134,7 +135,7 @@
   .sn-details .price{
        font-size: 18px;
        margin-left: 12px;
-    font-weight: 700;
+    font-weight: 400;
   }
    .users-course {
     margin-right: 1rem;
@@ -161,9 +162,9 @@
      .content-course p{
 
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400px; 
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     line-height: 1rem;
   font-family: 'Roboto', sans-serif;
 
@@ -172,6 +173,32 @@
     color: #111;
     opacity: 0.6;font-family: 'Roboto', sans-serif;
   }
+
+
+ @media (max-width:766px) {
+
+  /*single*/
+   .sn-details{
+    justify-content: flex-start;
+    margin-top:0.5rem; 
+
+   }
+   .left-details{
+    width: 100%;
+
+    justify-content: space-between;
+    margin-bottom: 0.5rem; 
+  }
+ 
+  .right-details{
+       width: 100%;
+  
+    justify-content: space-between;
+
+  }
+}
+
+
 </style>
     <section class="container-wrapper">
       <div class="sn-course-wrapper">
