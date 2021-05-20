@@ -20,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/font-icons.css">
   </head>
 
   <body>
@@ -238,8 +237,102 @@
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+            <style type="text/css">
+              .module-course{
+                margin-top: 3rem;
+              }
+              .module-course .title-course h1{
+                margin-bottom: 1rem;
+              }
+              .accordion-course{
+                box-sizing: border-box;
+                margin-bottom: 1rem;
+              }
+              .accordion-button-course{
+                background: #f8f9fa;
+                display: flex;
+                padding: 5px 10px;
+              }
+                .accordion-button-course button{
+                  width: 100%;
+                  text-align: left;
+                  color: #111;
+                  background:transparent;
+                  border:none;
+                  font-size: 1.2rem;
+                  text-transform:uppercase;
+                  cursor: pointer;
+                }
+                .accordion-button-course button:after{
+                  content: '\25be';
+                  transform: scale(1.5);
+                  float: right;
+                }
+            
+                  .accordion-button-course.active{
+                     background: #ddd;
+                  }
+                  .accordion-button-course.active button:after{
+                  content: '\25b4';
+                }
+
+                     .accordion-content-course{  overflow: hidden;
+
+                  border:solid 1px #f8f9fa;
+                   border-top:none;
+                   max-height: 0;
+                  
+                   transition:  max-height 1s; 
+
+                 }
+                  .accordion-content-course p{
+                     max-height: 100%;
+                     padding:15px;    
+                  } 
+            </style>
             <div class="module-course">
-              
+              <div class="title-course">
+              <h1>Conteudo</h1>
+            </div>
+              <div class="accordion-course">
+                <div class="accordion-button-course ">
+                  <button><span>Intro</span></button>
+                </div>
+                <div class="accordion-content-course">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+               <div class="accordion-course">
+                <div class="accordion-button-course ">
+                  <button><span>Intro</span></button>
+                </div>
+                <div class="accordion-content-course">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+               <div class="accordion-course">
+                <div class="accordion-button-course ">
+                  <button><span>Intro</span></button>
+                </div>
+                <div class="accordion-content-course">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
             </div>
             
           </div>
@@ -249,8 +342,8 @@
     </section>
 
     <footer>
-      <div class="menu-footer">
-        <p style="color: #000">@skool</p>
+    <div style="text-align: center; margin-top:1rem ">
+        <p>@skool</p>
       </div>
     </footer>
 <script type="text/javascript" src="./assets/js/script.js"> </script>

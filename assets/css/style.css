@@ -151,6 +151,7 @@ margin: 10px 0;
 }
 .menu.active{
    display: block;
+   position: fixed;
 }
  .menu-logo img{
   cursor: pointer;
