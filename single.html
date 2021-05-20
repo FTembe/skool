@@ -1,382 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>skool</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/font-icons.css">
+  </head>
 
-	<!-- bootstrap 4.3.1 -->
-	<link rel="stylesheet" href="css/vendors/Bootstrap/bootstrap.min.css">
+  <body>
+    <header >
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+          <img src="./assets/img/logoblue.png" alt="skool logo"  class="img-logo" />
+        </a>
+        </div>
+        <div class="nav-search">
+        <div class="nav-form-search">
+          <input type="text" value="" class="input-search" placeholder="Pesquisar">
+          <button class="btn-search"> <i class="fa fa-search"></i> </button>
+          
+        </div>
+        </div>
+        <div>
+        <nav>
+          <ul class="nav_links">
+            <li class="nav_items"><a href="#" id="search"> <i class="fa fa-search"></i> </a></li>
+            <li class="nav_items menu-icon">
+              <a href="#">
+                <div class="menu_line"></div>
+                <div class="menu_line_2"></div>
+              </a>
 
-	<!-- site header styles -->
-	<link href="css/plugins/navigation.min.css" rel="stylesheet">
+            </li>
+          </ul>
+        </nav>
+      </div>
+     </div>
+    
+    <div class="menu ">
+      <div class="menu-header">
+        <div class="menu-logo">
+         <a href="index.html"><img src="./assets/img/logowhite.png" alt="skool logo"  class="img-logo" /></a> 
+        </div>
+          <div class="menu-options">
+            <ul class="nav_links">
+            <li class="nav_items"><a href="#"> <i class="fa fa-shopping-cart"></i> </a></li>
+            <li class="nav_items envelope"><a href="#"> <i class="fa fa-envelope"></i> <span></span></a></li>
+            <li class="nav_items menu-close"><a href="#">X</a></li>
+          </ul>
+       
+        </div>
+      </div>
+      <div class="menu-container">
+        <ul>
+          <li><a href="#">sala de aulas</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">#hub</a></li>
+          <li><a href="#">#skoll share</a></li>
+          <li><a href="#">Skool</a></li>
+        </ul>
+        
+      </div>
+        <div class="user-picture">
+       
+      </div>
+      <div class="menu-footer">
+        <p>@skool</p>
+      </div>
+    </div>
+    </header>
+    <style type="text/css">
+  .sn-course-wrapper{
+    list-style: none;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
 
-	<!-- main styles -->
-	<link rel="stylesheet" href="css/main.css">
+  overflow-y: auto;
+  padding: 20px 0;
+  width: 776px;
+   max-width: 100%;
 
-	<!-- theme font -->
-	<link rel="stylesheet" type="text/css" href="css/theme-font.min.css">
-
-	<!-- IE11 Support -->
-	<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="js/ie11CustomProperties.js"><\x2fscript>');</script>
-
-	<!-- styles for RTL -->
-	<!--<link rel="stylesheet" type="text/css" href="css/rtl.min.css">-->
-
-	<title>.skool | Home</title>
-
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logoblue.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logoblue.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/logoblue.png">
-	<!-- <link rel="manifest" href="./img/theme-content/favicon/site.webmanifest"> -->
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
-</head>
-<body>
-	<nav id="site-header" class="site-header navigation navigation-justified sticky-top">
-		<div class="container">
-			<div class="navigation-header">
-				<div class="navigation-logo">
-					<a class="site-logo" href="index.html">
-						<img loading="lazy" src="assets/img/logoblue.png" alt="logo" width="90">
-					</a>
-				</div>
-				<div class="navigation-button-toggler">
-					<i class="hamburger-icon"></i>
-				</div>
-			</div>
-			<div class="navigation-body">
-				<div class="navigation-body-header">
-					<div class="navigation-logo">
-						<a class="site-logo" href="index.html">
-							<img loading="lazy" src="./assets/img/logoblue.png" alt="skool" width="90">
-						</a>
-					</div>
-					<!-- MAIN HEADER RESPONSIVE BUTTON-CLOSE ICON -->
-					<span class="navigation-body-close-button">&#10005;</span>
-					<!-- /MAIN HEADER RESPONSIVE BUTTON-CLOSE ICON -->
-
-				</div>
-				<!-- /MAIN HEADER BODY HEADER -->
-
-				<!-- MAIN HEADER MENU -->
-			
-					<div class="form-item mt-3 col-md-9" style="position: relative; display: inline-flex;align-items: center;">
-<div style="position: absolute;z-index: 99;  right: 5%;" >
-	<a href="#"><svg class="crumina-icon" width="25" height="25"><use xlink:href="#icon-search"></use></svg>
-	</a>
-</div>
-						<input placeholder="Procurar" class="col-md-12 w-100" type="text">
-					</div>
-
-
-				
-				<!-- /MAIN HEADER MENU -->
-				<!-- MAIN HEADER ADDITIONAL MENU -->
-				<div class="navigation-body-section navigation-additional-menu">
-					<!-- MAIN HEADER SHOP CART -->
-					<div class="navigation-shop-cart-wrapper">
-
-						<a href="#" class="shop-link-responsive"></a>
-
-						<div class="navigation-shop-cart" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false" role="menu">
-
-							<div class="dropdown-menu dropdown-menu-right popup-cart">
-								<div class="popup-cart-content">
-
-									<!-- <h5 class="title-cart">You added to cart!</h5> -->
-									<div class="cart-products">
-										<div class="cart-popup-item">
-											<img loading="lazy" src="img/demo-content/books/book1.png"
-												class="cart-popup-item-thumb" alt="product">
-											<div class="cart-popup-item-content">
-												<a href="#" class="cart-popup-item-title">Advanced course</a>
-												<div class="price"><span class="count">2</span> x
-													<span class="">500 MZN</span>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div class="cart-popup-total">
-									<div class="cart-total-text">
-										<h4 class="title">TOTAL:</h4>
-										<div class="total-price">1000 MZN</div>
-									</div>
-									<a href="#" class="crumina-button button--dark button--s">Carrinho </a>
-									<a href="#" class="crumina-button button--green button--s">Checkout</a>
-								</div>
-
-							</div>
-
-							<!-- MAIN HEADER SHOP CART COUNT -->
-							<div class="cart-count">3</div>
-							<!-- /MAIN HEADER SHOP CART COUNT -->
-
-							<!-- MAIN HEADER SHOP CART ICON -->
-							<svg class="crumina-icon" width="30" height="25">
-								<use xlink:href="#icon-shop-cart"></use>
-							</svg>
-							<!-- /MAIN HEADER SHOP CART ICON -->
-
-						</div>
-					</div>
-					<!-- /MAIN HEADER SHOP CART -->
-
-
-					<div class="navigation-shop-cart-wrapper">
-
-						<svg class="crumina-icon" width="30" height="30">
-							<use xlink:href="#icon-email"></use>
-						</svg>
-						<div class="cart-count">3</div>
-					</div>
-					<!-- MAIN HEADER SEARCH -->
-					<div class="navigation-search">
-						<a href="#" class="user-menu-content">
-							<span></span>
-							<span></span>
-						</a>
-					</div>
-					<!-- /MAIN HEADER SEARCH -->
-				</div>
-				<!-- /MAIN HEADER ADDITIONAL MENU -->
-			</div>
-			<!-- MAIN HEADER BODY -->
-		</div>
-		<!-- /MAIN HEADER CONTAINER -->
-	</nav>
-	<!-- /MAIN HEADER -->
-
-
-<!-- MAIN CONTENT WRAPPER -->
-<div class="main-content-wrapper">
-
-	<div class="medium-padding">
-		<div class="container">
-			<div class="row">
-			
-			
-				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 m-auto">
-
-					<!-- POST DETAILS -->
-					<article class="entry post post-standard has-post-thumbnail post-standard-details post-standard-details--wide">
-				
-						<div class="post-details-content">
-							<div class="wp-caption alignnone mb-5">
-								<img loading="lazy" src="images/img26.jpg" alt="Post" style="border: none; border-radius: 1.2rem;">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="row">
-											<div class="col-md-6 ">
-												<a href="method.html" class="crumina-button button--primary button--m w-100">Pagar</a>
-											</div>
-											<div class="col-md-2 mt-3">
-												<h5>3.500.00MZN</h5>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 text-right">
-										<div class="row">
-											<div class="col-md-6 mt-3">
-												<h5>3.500.00MZN</h5>
-											</div>
-											<div class="col-md-6 mt-3 ">
-												<h5>3.500.00MZN</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<h2>Branda Strategy </h2>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Erat imperdiet sed euismod nisi porta.</p>
-
-							<p>Vel fringilla est ullamcorper eget nulla facilisi etiam. Senectus et netus et malesuada fames ac turpis. Aliquam ultrices sagittis lorem ipsum dolor sit amet consectetur adipiscing.</p>
-
-						
-
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Erat imperdiet sed euismod nisi porta.</p>
-
-							<div class="wp-block-separator is-style-default"></div>
-							<div class="post-content">
-								<h5>Conteudo</h5>
-								<div class="accordion crumina-module crumina-accordion" id="accordion">
-									<div class="card">
-										<div class="card-header" id="headingOne">
-											<h2 class="mb-0">
-												<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													<span class="icons">
-														<svg class="crumina-icon" width="14" height="8">
-															  <path fill-rule="evenodd" d="M6.488.209L.201 6.324a.683.683 0 000 .985l.506.493a.73.73 0 001.012 0l5.275-5.13 5.274 5.13a.73.73 0 001.013 0l.507-.493a.684.684 0 000-.985L7.5.209a.73.73 0 00-1.012 0z" />
-														</svg>
-													</span>
-													<span class="title">Intoducao do curso</span>
-												</button>
-											</h2>
-										</div>
-			
-										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-											<div class="card-body">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus at ultrices mi tempus imperdiet nulla malesuada.
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="headingTwo">
-											<h2 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													<span class="icons">
-														<svg class="crumina-icon" width="14" height="8">
-															  <path fill-rule="evenodd" d="M6.488.209L.201 6.324a.683.683 0 000 .985l.506.493a.73.73 0 001.012 0l5.275-5.13 5.274 5.13a.73.73 0 001.013 0l.507-.493a.684.684 0 000-.985L7.5.209a.73.73 0 00-1.012 0z" />
-														</svg>
-													</span>
-													<span class="title">Intoducao do curso</span>
-												</button>
-											</h2>
-										</div>
-										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-											<div class="card-body">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-												ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-												ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-												reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-												sint occaecat cupidatat non proident, sunt in culpa.
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="headingThree">
-											<h2 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													<span class="icons">
-														<svg class="crumina-icon" width="14" height="8">
-															  <path fill-rule="evenodd" d="M6.488.209L.201 6.324a.683.683 0 000 .985l.506.493a.73.73 0 001.012 0l5.275-5.13 5.274 5.13a.73.73 0 001.013 0l.507-.493a.684.684 0 000-.985L7.5.209a.73.73 0 00-1.012 0z" />
-														</svg>
-													</span>
-													<span class="title">Intoducao do curso</span>
-												</button>
-											</h2>
-										</div>
-										<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-											<div class="card-body">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-												ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-												ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-												reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-												sint occaecat cupidatat non proident, sunt in culpa.
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="headingFour">
-											<h2 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-													<span class="icons">
-														<svg class="crumina-icon" width="14" height="8">
-															  <path fill-rule="evenodd" d="M6.488.209L.201 6.324a.683.683 0 000 .985l.506.493a.73.73 0 001.012 0l5.275-5.13 5.274 5.13a.73.73 0 001.013 0l.507-.493a.684.684 0 000-.985L7.5.209a.73.73 0 00-1.012 0z" />
-														</svg>
-													</span>
-													<span class="title">Intoducao do curso</span>
-												</button>
-											</h2>
-										</div>
-										<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-											<div class="card-body">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-												ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-												ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-												reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-												sint occaecat cupidatat non proident, sunt in culpa.
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						
+  }
+  .sn-image img{
+    border-radius: 20px;
+  }
+  .sn-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:1rem; 
+  }
+  .left-details{
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+    .right-details{
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .button-get-course button{
+    border:none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background:#0000ff;
+     border-radius: 160px;
+     padding: 10px 40px;
+     cursor: pointer;
+  }
+  .sn-details .price{
+       font-size: 18px;
+       margin-left: 12px;
+    font-weight: 700;
+  }
+   .users-course {
+    margin-right: 1rem;
+   }
+  .users-course span:not(i){
+   font-size: 18px;
+       margin-left: 12px;
+       font-weight:400;
+  }
+    .stars-course span:not(i){
+   font-size: 18px;
+       margin-left: 12px;
+       font-weight:400;
+  }
+  .sn-description{
+    margin: 1rem 0;
+  }
+   .content-course{
+    margin: 1rem 0;
+ 
 
 
-						</div>
+  }
+     .content-course p{
 
-					</article>
-				
-				</div>
-			</div>
-		</div>
-	</div>
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 400px; 
+    letter-spacing: 2px;
+    line-height: 1rem;
+  font-family: 'Roboto', sans-serif;
 
+  }
+  .title-course h1{
+    color: #111;
+    opacity: 0.6;font-family: 'Roboto', sans-serif;
+  }
+</style>
+    <section class="container-wrapper">
+      <div class="sn-course-wrapper">
+        <div class="sn-course">
 
+          <div class="sn-image">
+            <img src="./assets/img/post-link.png">
+          </div>
 
-	<!-- BACK TO TOP -->
-	<div class="back-to-top">
-		<svg class="crumina-icon">
-			<use xlink:href="#icon-back-to-top"></use>
-		</svg>
-	</div>
-	<!-- /BACK TO TOP -->
+          <div class="sn-details">
+           <div class="left-details">
+                <div class="button-get-course">
+                   <button>Pagar</button>
+              </div>
+              <div class="price">
+                <span> 15.0000, 00 Mt</span>
+              </div>
+           </div>
+             <div class="right-details">
+                <div class="users-course">
+                   <span> <i class="fa fa-user-plus "></i> 35.4k </span>
+              </div>
+              <div class="stars-course">
+                <span> <i class="fa fa-star "></i> 35.4k </span>
+              </div>
+           </div>
+          </div>
+          <div class="sn-description">
+            <div class="title-course">
+              <h1>Brand  Strategy</h1>
+            </div>
+            <div class="content-course">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="module-course">
+              
+            </div>
+            
+          </div>
 
-</div>
-<!-- /MAIN CONTENT WRAPPER -->
+        </div>
+      </div>
+    </section>
 
-	<!-- /MAIN CONTENT WRAPPER -->
-
-
-	<!-- FOOTER -->
-	<footer id="site-footer" class="footer dark-section">
-		<!-- SUB FOOTER -->
-		<div class="sub-footer">
-			Skool-2021
-		</div>
-		<!-- /SUB FOOTER -->
-
-	</footer>
-	<!-- /FOOTER -->
-
-	<!-- JS-scripts for Header Main Navigation -->
-	<script src="js/js-plugins/navigation.min.js" defer></script>
-	<!-- /JS-scripts for Header Main Navigation -->
-
-	<!-- JQuery -->
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<!-- /JQuery -->
-
-	<!-- JS-scripts Bootstrap -->
-	<script src="js/Bootstrap/bootstrap.bundle.min.js"></script>
-	<!-- JS-scripts Bootstrap -->
-
-	<!-- JS-scripts Waypoints -->
-	<script src="js/js-plugins/waypoints.js"></script>
-	<!-- JS-scripts Waypoints -->
-
-	<!-- JS-scripts for Main Slider -->
-	<script src="js/js-plugins/imagesloaded.pkgd.min.js"></script>
-	<!-- /JS-scripts for Main Slider -->
-
-	<!-- JS-scripts custom Crumina select -->
-	<script src="js/js-plugins/select2.min.js"></script>
-	<!-- /JS-scripts custom Crumina select -->
-
-	<!-- JS-scripts for Sliders -->
-	<script src="js/js-plugins/swiper.min.js"></script>
-	<!-- /JS-scripts for Sliders -->
-
-	<!-- JS-scripts for ANIMATION -->
-	<script src="js/js-plugins/anime.min.js"></script>
-	<!-- /JS-scripts for ANIMATION -->
-
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-	<!-- /MAIN JS -->
-
-	<!-- SVG icons loader -->
-	<script src="js/svg-loader.js"></script>
-	<!-- /SVG icons loader -->
-
-</body>
-
+    <footer>
+      <div class="menu-footer">
+        <p style="color: #000">@skool</p>
+      </div>
+    </footer>
+<script type="text/javascript" src="./assets/js/script.js"> </script>
+  </body>
 </html>
+
