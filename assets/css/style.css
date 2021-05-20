@@ -3,98 +3,107 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-button::selection {
-    background: #c8177f !important;
-    color: #FFF !important;
-    text-shadow: none !important;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: 1px;
+    
+    border:solid 1px #f8f9fa;
+    border-radius:1px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color:var(--bg-blue);
+    border-radius: 60px; height:  6px; width: 60px;
+}
+:root {
+  --bg-blue: #0000ff;
+  --bg-black: #111111;
+  --bg-white: #ffffff;
+  --link-color: #1b2c38;
+  --color-black: #111111;
+}
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    color: var(--link-color);
 }
 
-button::-moz-selection {
-    background: #c8177f !important;
-    /* Firefox */
-    color: #FFF !important;
-    text-shadow: none !important;
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  background-color: transparent;
+   -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
 }
 
-button::-webkit-selection {
-    background: #c8177f !important;
-    /* Safari */
-    color: #FFF !important;
-    text-shadow: none;
+a:hover {
+  color: var(--bg-blue);
+  text-decoration: underline;
 }
 
-button:active,
- button:focus {
-    outline: none !important !important;
+a:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+   pointer-events: none;
+  cursor: pointer;
 }
 
-p {
-  margin-bottom: 0;
-}
-:root {
-  --bg-blue: #0000ff;
-  --bg-black: #111111;
-  --bg-white: #ffffff;
-  --primary-accent-color: #27c7cd;
-  --link-color: #1b2c38;
-  --color-black: #111111;
-}
-html,
-body {
-  width: 100%;
-  height: 100vh;
-}
-a {
-  color: var(--link-color);
-  -webkit-transition: all 0.15s linear;
-  -o-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-  text-decoration: none;
-  display: inline-block;
-}
-a:hover {
-  color: var(--primary-accent-color);
-  text-decoration: none;
-}
 ul,
 li {
   list-style: none;
 }
-li,
-a,
-i,
-button {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  color: var(--color-black);
-  text-transform: none;
-  outline: none;
-}
 
-li:hover,
-a:hover,
-i:hover,
-button:hover {
-  /* opacity: 0.9; */
 
-  outline: none;
-}
-img{
-  pointer-events: none;
-  cursor: pointer;
-}
 /* Nabar */
 header {
-/*  box-shadow: 0px 0px 8px #ddd;*/
+
   width: 100%;
 }
 header div.navbar {
@@ -388,18 +397,22 @@ justify-content: center;
   padding: 10px 70px;
 }
 .pub-button{
-  
-   width:  200px;
-   height: 40px;
+  width:  200px;
+  height: 40px;
   background:transparent;
   cursor: pointer;
-   border-radius: 40px;
+  border-radius: 40px;
   font-size: 16px;
-    font-weight: 700;text-align: center;
-    border: solid 2px #111;
-    color: #111;
-    text-transform: uppercase;
-
+  font-weight: 700;text-align: center;
+  border: solid 2px #111;
+  color: #111;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  }
+  .pub-button:hover{
+      background:var(--bg-blue);
+      border-color: var(--bg-blue);
+      color: #fff;
   }
   
   .pub-desc{
