@@ -5,6 +5,31 @@
   -webkit-box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+button::selection {
+    background: #c8177f !important;
+    color: #FFF !important;
+    text-shadow: none !important;
+}
+
+button::-moz-selection {
+    background: #c8177f !important;
+    /* Firefox */
+    color: #FFF !important;
+    text-shadow: none !important;
+}
+
+button::-webkit-selection {
+    background: #c8177f !important;
+    /* Safari */
+    color: #FFF !important;
+    text-shadow: none;
+}
+
+button:active,
+ button:focus {
+    outline: none !important !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -400,17 +425,17 @@ justify-content: center;
 
   .footer{
     position: relative;
-    top:10%;
-    -webkit-box-sizing: border-box;
-    width: 100%;
-    padding: 20px;
-    background-color: #111;
+
   }
 
-  .footer-content p {
-    color: #fff;
-    text-align: center;
-   
+  .footer p {
+  margin-top:8px;
+  text-transform: lowercase;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
   }
 
  @media (max-width:766px) {
