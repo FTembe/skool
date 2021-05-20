@@ -25,7 +25,8 @@
     <header >
       <div class="navbar">
         <div class="logo">
-          <img src="./assets/img/logoblue.png" alt="skool logo"  class="img-logo" />
+          <a href="index.html">
+          <img src="./assets/img/logoblue.png" alt="skool logo"  class="img-logo" /></a>
         </div>
         <div class="nav-search">
         <div class="nav-form-search">
@@ -53,7 +54,7 @@
     <div class="menu ">
       <div class="menu-header">
         <div class="menu-logo">
-         <a href=""><img src="./assets/img/logowhite.png" alt="skool logo"  class="img-logo" /></a> 
+         <a href="index.html"><img src="./assets/img/logowhite.png" alt="skool logo"  class="img-logo" /></a> 
         </div>
           <div class="menu-options">
             <ul class="nav_links">
@@ -166,27 +167,18 @@
         <h1>
           Tranding & <br>analise da<br> dados
         </h1>
-          <button class="pub-button"> Ver Curso</button><a href="single.html"></a>
+          <a href="single.html"><button class="pub-button"> Ver Curso</button></a>
       </div>
       <div class="pub-img">
       <img src="./assets/img/image.gif" alt="has-story">
       </div>
     </div>
     </section>
-   <div class="menu-footer">
+    <footer>
+      <div class="menu-footer">
         <p style="color: #000">@skool</p>
       </div>
-<script type="text/javascript">
-  let menu =  document.querySelector('.menu');
-   document.querySelector('#search').addEventListener('click',()=>{
-alert('relaxa');
-    })
-  document.querySelector('.menu-icon').addEventListener('click',()=>{
-    menu.classList.add('active');
-  })
-    document.querySelector('.menu-close').addEventListener('click',()=>{
-menu.classList.remove('active');
-    })
-</script>
+    </footer>
+<script type="text/javascript" src="./assets/js/script.js"> </script>
   </body>
 </html>
