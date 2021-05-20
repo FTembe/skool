@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+
   </head>
 
   <body>
@@ -196,8 +197,6 @@
 
   }
 }
-
-
 </style>
     <section class="container-wrapper">
       <div class="sn-course-wrapper">
@@ -249,18 +248,17 @@
                 margin-bottom: 1rem;
               }
               .accordion-button-course{
-                background: #f8f9fa;
-                display: flex;
+                background: #ddf;
                 padding: 5px 10px;
               }
                 .accordion-button-course button{
                   width: 100%;
                   text-align: left;
-                  color: #111;
                   background:transparent;
                   border:none;
                   font-size: 1.2rem;
-                  text-transform:uppercase;
+                  text-transform:capitalize;
+                  opacity: 0.9;
                   cursor: pointer;
                 }
                 .accordion-button-course button:after{
@@ -275,8 +273,7 @@
                   .accordion-button-course.active button:after{
                   content: '\25b4';
                 }
-
-                     .accordion-content-course{  overflow: hidden;
+                .accordion-content-course{  overflow: hidden;
 
                   border:solid 1px #f8f9fa;
                    border-top:none;
@@ -288,6 +285,13 @@
                   .accordion-content-course p{
                      max-height: 100%;
                      padding:15px;    
+
+                         text-align: justify;
+    font-size: 14px;
+    font-weight: 400px; 
+    /*letter-spacing: 2px;*/
+    line-height: 1rem;
+  font-family: 'Roboto', sans-serif;
                   } 
             </style>
             <div class="module-course">
