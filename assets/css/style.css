@@ -429,7 +429,7 @@ justify-content: center;
   }
 
   .footer p {
-  margin-top:8px;
+  margin-top:20px;
   text-transform: lowercase;
   text-align: center;
   color: #fff;
@@ -454,7 +454,7 @@ justify-content: center;
    /*color: #fff;*/
     }
     .pub-content{
-      padding: 65px 10px;
+      padding: 68px 10px;
       display: flex;
       justify-content: center;
       align-items: center;
