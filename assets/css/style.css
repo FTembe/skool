@@ -24,8 +24,11 @@ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   --bg-blue: #0000ff;
   --bg-black: #111111;
   --bg-white: #ffffff;
+    --bg-transparent: transparent;
   --link-color: #1b2c38;
   --color-black: #111111;
+  --color-white: #ffffff;
+
 }
 html,
 body {
@@ -37,7 +40,28 @@ body {
     font-weight: 400;
     color: var(--link-color);
 }
+.bg-black{
+    background-color: var(--bg-black)!important;
+    color:  var(--color-white)!important;
+}
+.bg-blue{
+    background-color: var(--bg-blue)!important;
+    color:  var(--color-white)!important;
+}
+.bg-transparent{
+    background-color: var(--bg-transparent)!important;
+    color:  var(--color-black)!important;
+}
+.border{
+  border:solid 2px !important;
 
+}
+.noborder{
+  border:none!important; 
+}
+.border-radius50{
+  border-radius: 50px!important;
+}
 a {
   color: var(--link-color);
   text-decoration: none;
