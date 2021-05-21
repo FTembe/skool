@@ -56,12 +56,30 @@ body {
   border:solid 2px !important;
 
 }
+.white{
+     color:  var(--color-white)!important;
+
+}
 .noborder{
   border:none!important; 
 }
 .border-radius50{
   border-radius: 50px!important;
 }
+.d-flex{
+      display: flex!important;
+      flex-wrap: wrap!important;    
+      justify-content: space-between;
+
+  }
+  .align-center{
+    height: 100%;
+    align-items: center!important;
+  }
+  .flex-direction-column{
+    flex-direction: column!important;
+  }
+
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -93,7 +111,14 @@ button {
 button:focus:not(:focus-visible) {
   outline: 0;
 }
-
+input:focus{
+  outline: 0;
+  box-shadow: 0 0 12px #ddd;
+  transition: all 0.5s;
+}
+input:hover{
+  cursor: pointer;
+}
 input,
 button,
 select,
@@ -460,6 +485,103 @@ justify-content: center;
     float: right;
   }
 
+/*method checkout*/
+.top-section-blue {
+  position: relative;
+  width:  100%;
+  background-color: var(--bg-blue);
+  border-radius:  0;
+}
+
+.top-section-blue::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: -50px;
+  height: 50px;
+  width: 25px;
+  border:none;
+  border-top-left-radius: 25px;
+  box-shadow: 0 -25px 0 0 var(--bg-blue);
+  clear: both;
+}
+.top-section-blue::after { clear: both;
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  bottom: -50px;
+  height: 50px;
+  width: 25px;
+  border:none;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -25px 0 0 var(--bg-blue);
+}
+.container-section-blue {
+  padding: 1rem 3rem;
+}
+.container-section-blue .section-logo a{
+  display: inline;
+
+}
+.container-section-blue .section-logo a img{
+  width: 94px;
+  max-width: 100%;
+}
+.container-section-blue a{
+  color: var(--color-white);
+  text-decoration:none; 
+  
+}
+.container-section-blue a:hover{
+  opacity: 0.8;
+  
+}
+
+  .options{
+    padding: 1rem 3rem;
+    text-align: center;
+  
+  }
+  .heading-title{
+    margin-bottom: 2rem; 
+  }
+/*method*/
+
+  .btn-options-group a{
+    box-sizing: border-box;
+    border:none; 
+    text-decoration: none;
+    display: block;
+    width: 49%;
+    margin-bottom:1rem; 
+    margin-top: 1rem; 
+    padding:1.3rem 2rem;
+    background: #111;
+    color: #fff;
+    text-align: center; 
+
+    font-size:1.5rem;
+    /*margin-left: 1rem; */
+    cursor: pointer;
+
+  }
+  .btn-options-group a:hover{
+    opacity: 0.8;
+  }
+  
+@media (max-width:766px) {
+  .btn-options-group a{
+    width: 100%;
+    padding:1.3rem 0.2rem;  font-size:14px;
+  }
+    .w50{
+        width: 100%!important;
+      }
+}
+/*chekout*/
+
+/*footer*/
   .footer{
     position: relative;
 

@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>skool</title>
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -21,150 +15,32 @@
   </head>
 
   <body >
-  
-    <section>
-    	<style type="text/css">
-
-.top-section-blue {
-  position: relative;
-  height: 100%;
-  width:  100%;
-  background-color: var(--bg-blue);
-  border-radius:  0;
-}
-
-.top-section-blue::before {
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  bottom: -50px;
-  height: 50px;
-  width: 25px;
-  border:none;
-  border-top-left-radius: 25px;
-  box-shadow: 0 -25px 0 0 var(--bg-blue);
-  clear: both;
-}
-.top-section-blue::after { clear: both;
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  right: 0;
-  bottom: -50px;
-  height: 50px;
-  width: 25px;
-  border:none;
-  border-top-right-radius: 25px;
-  box-shadow: 0 -25px 0 0 var(--bg-blue);
-}
-.container-section-blue {
-	padding: 1rem 3rem;
-}
-.container-section-blue .section-logo a{
-	display: inline;
-
-}
-.container-section-blue .section-logo a img{
-	width: 94px;
-	max-width: 100%;
-}
-.container-section-blue a{
-	color: var(--color-white);
-	text-decoration:none; 
-	
-}
-.container-section-blue a:hover{
-	opacity: 0.8;
-	
-}
-    	</style>
-     	<section class="top-section-blue">
-			<div class="container-section-blue d-flex align-center">
-				<div class="section-logo">
-					<a href="index.html"><img src="./assets/img/logowhite.png" alt="skool logo"  class="img-logo" /></a> 
-				</div>
-				
-					<a href="index.html">Voltar</a>
-				
+ 	<section class="top-section-blue">
+		<div class="container-section-blue d-flex align-center">
+			<div class="section-logo">
+				<a href="index.html"><img src="./assets/img/logowhite.png" alt="skool logo"  class="img-logo" /></a> 
 			</div>
-     	</section>
-    	<section>
-    		<style type="text/css">
-    			.container-options-wrapper{
-
-    			}
-    			.options{
-    				padding: 1rem 3rem;
-    				text-align: center;
-    			
-    			}
-    			.heading-title{
-    				margin-bottom: 2rem; 
-    			}
-    			.btn-options-group a{
-    				box-sizing: border-box;
-    				border:none; 
-    				text-decoration: none;
-    				display: block;
-    				width: 49%;
-    				margin-bottom:1rem; 
-    				margin-top: 1rem; 
-    				padding:1.3rem 2rem;
-    				background: #111;
-    				color: #fff;
-    				text-align: center; 
-
-    				font-size:1.5rem;
-    				/*margin-left: 1rem; */
-    				cursor: pointer;
-
-    			}
-    			.btn-options-group a:hover{
-    				opacity: 0.8;
-    			}
-    			.d-flex{
-    					display: flex;
-    					flex-wrap: wrap;		
-    					justify-content: space-between;
-
-    			}
-    			.align-center{
-					align-items: center;
-    			}
-    			
-			@media (max-width:766px) {
-				.btn-options-group a{
-					width: 100%;
-					padding:1.3rem 0.2rem;	font-size:14px;
-				}
-			}
-    		</style>
-		<div class="container-options-wrapper">
-			<div class="options">
+			<a href="index.html">Voltar</a>
+		</div>
+ 	</section>
+	<section>
+		<div class="container-options-wrapper d-flex flex-direction-column  ">
+			<div class="options align-center">
 				<div class="heading-title">
 					<h2>Metodo de Pagamento</h2>
 				</div>
 				<div class="btn-options-group">
-			<div class="d-flex">
-				<a href="#" class="bg-black noborder border-radius50">M-pesa</a> 
-
-<a href="#" class="bg-blue noborder border-radius50">Cartã de Credito/Debito</a>
-			</div>	
-<div class="d-flex">
-	<a href="#" class="bg-transparent border border-radius50">Transferencia</a>
-
-<a href="#" class="bg-transparent border border-radius50">Paypal</a>
-</div>
-
-
-						
-				
+					<div class="d-flex">
+						<a href="checkout.html" class="bg-black noborder border-radius50">M-pesa</a> 
+						<a href="checkout.html" class="bg-blue noborder border-radius50">Cartã de Credito/Debito</a>
+					</div>	
+					<div class="d-flex">
+						<a href="checkout.html" class="bg-transparent border border-radius50">Transferencia</a>
+						<a href="checkout.html" class="bg-transparent border border-radius50">Paypal</a>
+					</div>
+				</div>
 			</div>
-			</div>
-
 		</div>
 	</section>
-    </section>
-<script type="text/javascript" src="./assets/js/script.js"> </script>
   </body>
 </html>
