@@ -31,3 +31,12 @@ menu.classList.remove('active');
     })
 
   });
+
+
+let trx=JSON.parse(localStorage.getItem('user'));
+var profilePicture = document.createElement("img"); 
+profilePicture.src = trx.Image;
+profilePicture.style.width='100%';
+profilePicture.style.width='100%';
+profilePicture.style.borderRadius='100%';
+document.querySelector('.user-picture').appendChild(profilePicture);    
